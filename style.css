@@ -1,0 +1,146 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+}
+#contenedor {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+	.parte-izquierda {
+		width: 30%;
+		height: 100%;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+		background: #436718;
+	}
+		.estado-actual {
+			width: 90%;
+			height: 94%;
+			display: flex;
+		    flex-direction: column;
+		    flex-wrap: nowrap;
+		    align-content: space-around;
+		    align-items: center;
+		    justify-content: space-around;
+			background: #2ab0c1;
+		}
+			#img-estado-actual {
+				width: 280px
+			}
+			#datos {
+			    display: flex;
+   				flex-direction: column;
+				align-items: center;
+			}
+				#bandera {
+					width: 120px;
+					height: 130px;
+				}
+				#datos-extremadura {
+					margin-bottom: 50px;
+				}
+				.contenedor-datos-extremadura {
+					
+				}
+				.contenedor-datos{
+					width: 200px;
+				}
+				.title{
+					
+		    	}
+					#contagiados {
+
+					}
+					#altas {
+
+					}
+					#fallecidos {
+
+					}
+			#fecha {
+
+			}
+				#fecha-actualizacion {
+
+				}
+				#fecha-actualizacion-fecha {
+
+				}
+	.parte-derecha {
+		    width: 70%;
+		    display: flex;
+		    flex-wrap: wrap;
+		    flex-direction: row;
+		    height: 100%;
+		    background: #7cce1d;
+		    justify-content: space-around;
+		    align-content: space-around;
+	}
+		.datos-país {
+			width: 30%;
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-evenly;
+		    flex-direction: column;
+		    height: 45%;
+		    background: #2ab0c1;
+		    align-items: center;
+		}
+			.img-bandera {
+				width: 120px;
+				height: 120px;
+			}
+			.nombre-país {
+
+			}
+			.contagiados-país {
+
+			}
+			.altas-país {
+
+			}
+			.fallecidos-país {
+
+			}
+			.continente-país {
+
+			}
+	
+@media (max-width: 750px) {
+	#contenedor {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+		.parte-izquierda {
+			width: 100%;
+		}
+			.parte-izquierda {
+				height: 600px;
+			}
+				.img-estado-actual {
+					width: 50%;
+				}
+		.parte-derecha {
+			width: 100%;
+			flex-direction: row;
+			height: 1500px;
+		}
+			.datos-país {
+			   width: 95%;
+ 			   height: 230px;
+			}
+			.img-bandera {
+				width: 100px;
+				height: 100px;
+			}
+			.nombre-país {
+				font-size: 20px;
+			}
+}

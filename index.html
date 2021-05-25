@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio API COVID</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script async type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<div id="contenedor">
+
+		<div class="parte-izquierda">
+			<div class="estado-actual">
+				<img id="img-estado-actual" src="./imagenes/COVID.png">
+				<div id="datos">
+					<img id="bandera" src="./imagenes/extremadura.png">
+					<h1 id="datos-extremadura">Datos Extremadura:</h1>
+					<select onchange="filtrarPorCategoria()" id="categorias">
+					</select>
+						<div class="contenedor-datos-extremadura">
+							<h2 id="contagiados"></h2>
+							<h2 id="altas"></h2>
+							<h2 id="fallecidos"></h2>
+						</div>
+				</div>
+				<div di="fecha">
+					<h2 id="fecha-actualizacion">Actualizacion de datos: </h2>
+					<h2 id="fecha-actualizacion-fecha"></h2>
+				</div>
+			</div>
+		</div>
+		<div class="parte-derecha">
+			<div class="datos-país">
+				<img class="img-bandera" src="./imagenes/españa.png">
+				<h1 class="nombre-país">España</h1>
+				<h3 class="continente-país"></h3>
+				<h3 class="contagiados-país"></h3>
+				<h3 class="altas-país"></h3>
+				<h3 class="fallecidos-país"></h3>
+			</div>
+			<div class="datos-país">
+				<img class="img-bandera" src="./imagenes/francia.png">
+				<h1 class="nombre-país">Francia</h1>
+				<h3 class="continente-país"></h3>
+				<h3 class="contagiados-país"></h3>
+				<h3 class="altas-país"></h3>
+				<h3 class="fallecidos-país"></h3>
+			</div>
+			<div class="datos-país">
+				<img class="img-bandera" src="./imagenes/portugal.png">
+				<h1 class="nombre-país">Portugal</h1>
+				<h3 class="continente-país"></h3>
+				<h3 class="contagiados-país"></h3>
+				<h3 class="altas-país"></h3>
+				<h3 class="fallecidos-país"></h3>
+			</div>
+			<div class="datos-país">
+				<img class="img-bandera" src="./imagenes/estados-unidos.png">
+				<h1 class="nombre-país">Estados Unidos</h1>
+				<h3 class="continente-país"></h3>
+				<h3 class="contagiados-país"></h3>
+				<h3 class="altas-país"></h3>
+				<h3 class="fallecidos-país"></h3>
+			</div>
+			<div class="datos-país">
+				<img class="img-bandera" src="./imagenes/china.png">
+				<h1 class="nombre-país">China</h1>
+				<h3 class="continente-país"></h3>
+				<h3 class="contagiados-país"></h3>
+				<h3 class="altas-país"></h3>
+				<h3 class="fallecidos-país"></h3>
+			</div>
+			<div class="datos-país">
+				<img class="img-bandera" src="./imagenes/italia.png">
+				<h1 class="nombre-país">Italia</h1>
+				<h3 class="continente-país"></h3>
+				<h3 class="contagiados-país"></h3>
+				<h3 class="altas-país"></h3>
+				<h3 class="fallecidos-país"></h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
